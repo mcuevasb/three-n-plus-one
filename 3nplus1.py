@@ -14,9 +14,11 @@ sequence = list()
 for seed in range(1, max_seeds+1):
     sequence.clear()
     x = seed
+    
     while x != 1:
         sequence.append(x)
         x = threexplusone(x)
+    
     sequence.append(1)
     plt.plot(sequence)
 
